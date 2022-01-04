@@ -36,6 +36,8 @@ class Bruteforcer(object):
 		self.white = '\033[1;37m'
 		self.nc = '\033[0m'
 
+		self.cycle = True
+
 
 
 
@@ -47,7 +49,7 @@ class Bruteforcer(object):
 
 
 	def dispatcher_thread (self, tid):
-		while True:
+		while self.cycle:
 			item = self.JOBS_QUEUE.get()
 
 			if (item == self.terminate_signal):
@@ -62,6 +64,7 @@ class Bruteforcer(object):
 					print (self.green + "[*] Attempt successful for " + str(item) + " (" + str(round(time.perf_counter(), 4)) + " seconds)" + self.nc)
 					
 					# Stop other threads
+					self.cycle = False
 					self.kill_all_threads()
 
 				elif (outcome == False):
