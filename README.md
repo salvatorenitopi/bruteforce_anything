@@ -12,12 +12,12 @@ import bruteforcer
 If the functions returns true the bruteforcer bruteforce will know that the attempt was successful, otherwise it will be considered as failed.
 ```python
 def attempt_fx(pair)
-		username = pair[0]
-		password = pair[1]
-		if (username[0] == "b"):
-				return True
-		else:
-				return False
+	username = pair[0]
+	password = pair[1]
+	if (username[0] == "b"):
+		return True
+	else:
+		return False
 ```
 3. Configure some variables.
 ```python
