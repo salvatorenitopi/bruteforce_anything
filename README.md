@@ -26,7 +26,7 @@ wordlist_var = None
 username_var = ["admin", "bill", "user", "demo"]
 password_var = "/home/root/wordlist.txt"
 ```
-4. Instanciate the object and call the run method.
+4. Instantiate the object and call the run method.
 ```python
 b = bruteforcer.Bruteforcer(number_threads, wordlist_var, username_var, password_var, attempt_fx)
 b.run()
