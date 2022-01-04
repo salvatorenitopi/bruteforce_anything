@@ -11,7 +11,7 @@ import bruteforcer
 2. Write a testing function that takes in input the value/values that need to be tested.
 If the functions returns true the bruteforcer bruteforce will know that the attempt was successful, otherwise it will be considered as failed.
 ```python
-def attempt_fx(pair)
+def attempt_fx(pair):
 	username = pair[0]
 	password = pair[1]
 	if (username[0] == "b"):
