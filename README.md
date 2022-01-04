@@ -22,9 +22,9 @@ def attempt_fx(pair):
 3. Configure some variables.
 ```python
 number_threads = 8
-wordlist_var = None
-username_var = ["admin", "bill", "user", "demo"]
-password_var = "/home/root/wordlist.txt"
+wordlist_var = None					# Can be None, list, str (str contains the file path to a wordlist)
+username_var = ["admin", "bill", "user", "demo"]	# Can be None, list, str (str contains the file path to a wordlist)
+password_var = "/home/root/wordlist.txt"		# Can be None, list, str (str contains the file path to a wordlist)
 ```
 4. Instantiate the object and call the run method.
 ```python
