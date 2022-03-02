@@ -1,4 +1,4 @@
-# bruteforce_anything v2
+# bruteforce_anything_v2
 You provide the testing function and a wordlist, and the script will do the rest.
 
 This library allows you to easily create a multi-threaded script for fast bruteforcing virtually anything.
