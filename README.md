@@ -34,3 +34,10 @@ b.kill_all_threads()
 ```
 
 Multiple test implementations can be found in the *examples/* folder.
+
+
+## Version 2
+
+You can find a more flexible version of the *bruteforcer.py* library in the *v2/* folder.
+
+WARNING: to keep the code as flexible as possible the implementation is not memory-efficient.
